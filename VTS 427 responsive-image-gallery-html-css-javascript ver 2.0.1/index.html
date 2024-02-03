@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="author" content="sid">
+      <title> Responsive Image Gallery</title>
+      <!-- Style CSS -->
+      <link rel="stylesheet" href="./css/style.css">
+      
+      <!-- <link rel="stylesheet" href="./css/demo.css"> -->
+      <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css'>
+   </head>
+   <body>
+      <header class="cd__intro">
+         <h1> RESPONSIVE IMAGE GALLERY</h1>
+         <p> Responsive Image Gallery with Siddhu </p>
+         <nav class="navbar">
+          <button class="filter-btn " data-category="Nature">Nature</button>
+          <button class="filter-btn" data-category="Life Style">Life Style</button>
+          <button class="filter-btn" data-category="Travel">Travel</button>
+          <button class="filter-btn" data-category="all">All</button>
+          
+          <input type="text" id="search-input" class="cd__search-input" placeholder="Search" >
+          
+        
+        </nav>
+        
+      </header>
+      
+      <main class="cd__main">
+        
+         <main class="main">
+          <select id="sort-select">
+            <option value="" disabled selected hidden>Select Sorting Option</option>
+            <option value="None">All</option>
+            <option value="date">Sort by Date</option>
+            <option value="name">Sort by Name</option>
+          </select>
+  <div class="container">
+    <div class="card"  data-tags="Nature" data-category="Nature" data-date="2024-01-01" data-name="Nature">
+      <div class="card-image">
+        <a href="https://source.unsplash.com/1280x720/?nature" data-fancybox="gallery" 
+        data-caption="Image 1 : A Symphony of Earth's Palette: Embracing the Serenity of Nature's Canvas,
+         Whispers of the Wild: Where Every Leaf Tells a Story, and Every Stream Sings a Melody,
+         Dancing with the Dawn: Capturing the Timeless Beauty of Nature's Awakening.">
+
+          <img src="https://source.unsplash.com/1280x720/?nature" alt="Image Gallery">
+        </a>
+        <span class="date">2024-01-01</span>
+    <span class="name">Nature</span>
+      </div>
+    </div>
+    <div class="card"  data-tags="Life Style" data-category="Life Style" data-date="2024-01-02" data-name="Life Style">
+      <div class="card-image">
+        <a href="https://source.unsplash.com/1280x720/?food" data-fancybox="gallery" data-caption=" Image 2 :A Gastronomic Symphony: Where Every Dish is a Tale of Flavors, Textures, and Memories,
+        Savoring the Moment: Delighting in Culinary Creations That Tantalize the Senses.">
+          <img src="https://source.unsplash.com/1280x720/?food" alt="Image Gallery">
+          
+        </a>
+        <span class="date">2024-01-01</span>
+    <span class="name">Life Style</Style></span>
+      </div>
+    </div>
+    <div class="card" data-tags="Travel" data-category="Travel" data-date="2024-01-03" data-name="Travel">
+      <div class="card-image">
+        <a href="https://source.unsplash.com/1280x720/?travel" data-fancybox="gallery" data-caption=" Image 3 : Wanderlust Chronicles: Embarking on Journeys That Stir the Soul and Expand the Horizons,Exploring the World's Tapestry: Where Each Destination Unveils a New Chapter of Discovery.">
+          <img src="https://source.unsplash.com/1280x720/?travel" alt="Image Gallery">
+          
+        </a>
+        <span class="date">2024-01-01</span>
+    <span class="name">Travel</Style></span>
+      </div>
+    </div>
+    <div class="card"  data-tags="Life Style" data-category="Life Style" data-date="2024-01-02" data-name="Life Style">
+      <div class="card-image">
+        <a href="https://source.unsplash.com/1280x720/?building" data-fancybox="gallery" data-caption=" Image 4 : Urban Tapestry: Capturing the Architectural Symphony That Shapes the Heartbeat of Cities,Where Dreams Touch the Sky: Exploring the Magnificence and Majesty of Man-Made Marvels.">
+          <img src="https://source.unsplash.com/1280x720/?building" alt="Image Gallery">
+          
+        </a>
+        <span class="date">2024-01-01</span>
+    <span class="name">Life Style</Style></span>
+      </div>
+    </div>
+    <div class="card"  data-tags="Nature" data-category="Nature" data-date="2024-01-01" data-name="Nature">
+      <div class="card-image">
+        <a href="https://source.unsplash.com/1280x720/?flower" data-fancybox="gallery" data-caption=" Image 5 : Blossoms in Bloom: Celebrating Nature's Poetry, Where Every Petal Paints a Portrait of Perfection,
+        ,Whispers of Spring: Capturing the Fragile Elegance and Timeless Beauty of Floral Fantasies.">
+          <img src="https://source.unsplash.com/1280x720/?flower" alt="Image Gallery">
+          
+        </a>
+        <span class="date">2024-01-01</span>
+    <span class="name">Nature</span>
+      </div>
+    </div>
+    <div class="card" data-tags="Nature" data-category="Nature" data-date="2024-01-01" data-name="Nature">
+      <div class="card-image">
+        <a href="https://source.unsplash.com/1280x720/?animal" data-fancybox="gallery" data-caption=" Image 6 : Guardians of the Wild: Capturing Moments of Grace, Strength, and Untamed Beauty.
+        Eyes of the Wilderness: Witnessing the Majesty and Mystery of Earth's Furry and Feathered Friends." >
+          <img src="https://source.unsplash.com/1280x720/?animal" alt="Image Gallery">
+          
+        </a>
+        <span class="date">2024-01-01</span>
+    <span class="name">Nature</span>
+      </div>
+    </div>
+    <div class="card" data-tags="Life Style" data-category="Life Style" data-date="2024-01-02" data-name="Life Style">
+      <div class="card-image">
+        <a href="https://source.unsplash.com/1280x720/?sport" data-fancybox="gallery" data-caption=" Image 7 : Moments of Triumph: Capturing the Energy, Emotion, and Endurance of Athletic Pursuits.
+        Chasing Greatness: Where Every Move, Every Moment, Defines the Spirit of Athletic Excellence." >
+          <img src="https://source.unsplash.com/1280x720/?sport" alt="Image Gallery">
+          
+        </a>
+        <span class="date">2024-01-01</span>
+    <span class="name">Life Style</Style></span>
+      </div>
+    </div>
+    <div class="card" data-tags="Life Style" data-category="Life Style" data-date="2024-01-02" data-name="Life Style">
+      <div class="card-image">
+        <a href="https://source.unsplash.com/1280x720/?human" data-fancybox="gallery" data-caption=" Image 8 : Faces of Resilience: Where Every Expression Tells a Story of Courage, Hope, and Humanity.
+        Journeys of the Soul: Portraits That Reflect the Depth and Diversity of the Human Experience." >
+          <img src="https://source.unsplash.com/1280x720/?human" alt="Image Gallery">
+          
+        </a>
+        <span class="date">2024-01-01</span>
+    <span class="name">Life Style</Style></span>
+      </div>
+    </div>
+    <div class="card" data-tags="Nature" data-category="Nature" data-date="2024-01-01" data-name="Nature">
+      <div class="card-image" >
+        <a href="https://source.unsplash.com/1280x720/?mountain" data-fancybox="gallery" data-caption=" Image 9: Summit Serenity: Embracing the Majesty of Peaks That Touch the Sky and Stir the Spirit.
+        In the Realm of Giants: Where Every Cliff, Every Crest, Beckons with Untold Tales of Majesty." >
+          <img src="https://source.unsplash.com/1280x720/?mountain" alt="Image Gallery">
+          
+        </a>
+        <span class="date">2024-01-01</span>
+    <span class="name">Nature</span>
+      </div>
+    </div>
+  </div>
+</main>
+         
+      </main>
+      <footer class="cd__credit">Author: Siddhu_<a title=" My Portfolio" href="        " target="_blank">   About Me .</a>
+      </footer>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js'></script>
+    
+      <script src="./js/script.js"></script>
+     
+   </body>
+</html>
